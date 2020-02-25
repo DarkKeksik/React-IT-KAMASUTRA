@@ -3,4 +3,5 @@
     grid-area: footer;
     background: #393939;
     color: white;
+    border-top: 2px solid #78599b;
 }

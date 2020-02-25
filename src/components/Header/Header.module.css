@@ -1,7 +1,11 @@
 .header {
-    padding: .875rem;
     grid-area: header;
-    background: #cecece;
+    padding: .475rem;
+    background: #373737;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 0 10px #373737;
+    border-bottom: 2px solid #78599b;
 }
 .header__logo {
     border-radius: 100px;

@@ -1,11 +1,29 @@
 .nav {
+    display: flex;
+    flex-direction: column;
     min-width: 200px;
     grid-area: nav;
-    background: #ffe4c6;
+    background: #f7f0ff;
+    box-shadow: 0 -5px 5px #ddd;
+    z-index: 1;
 }
 
-.nav__item {}
+.nav__item {
+    background: #4a4a4a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Roboto';
+    transition-duration: .3s;
+}
 
-.header {
-    background: red;
+.nav__item:hover {
+    background: #686868;
+}
+
+.nav__item_active {
+    background: inherit !important;
+    color: #333;
+    box-shadow: 0 3px 10px #808080 inset;
 }
