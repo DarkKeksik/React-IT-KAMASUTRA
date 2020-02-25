@@ -1,0 +1,6 @@
+.footer {
+    min-height: 5rem;
+    grid-area: footer;
+    background: #393939;
+    color: white;
+}

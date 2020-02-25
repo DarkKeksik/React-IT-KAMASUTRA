@@ -13,33 +13,5 @@ ul li { list-style-type: none; }
         "footer footer footer footer footer footer footer footer footer footer footer footer"
     ;
     grid-template-rows: 60px 1fr;
-    grid-template-columns: repeat(9, 1fr);
     min-height: 100vh;
-}
-
-.header {
-    padding: .875rem;
-    grid-area: header;
-    background: #cecece;
-}
-.header__logo {
-    border-radius: 100px;
-    height: 100%;
-}
-.nav {
-    min-width: 200px;
-    grid-area: nav;
-    background: #ffe4c6;
-}
-.nav__item {
-
-}
-.main {
-    grid-area: main;
-}
-.footer {
-    min-height: 5rem;
-    grid-area: footer;
-    background: #393939;
-    color: white;
 }

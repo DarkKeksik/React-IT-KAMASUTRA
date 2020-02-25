@@ -1,0 +1,11 @@
+.nav {
+    min-width: 200px;
+    grid-area: nav;
+    background: #ffe4c6;
+}
+
+.nav__item {}
+
+.header {
+    background: red;
+}
