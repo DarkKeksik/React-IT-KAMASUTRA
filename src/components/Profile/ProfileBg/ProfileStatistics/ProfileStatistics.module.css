@@ -1,0 +1,9 @@
+.profileBg__statistics {
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    background: #00000078;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: "Roboto";
+}

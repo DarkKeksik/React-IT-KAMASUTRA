@@ -1,6 +1,6 @@
 .header {
     grid-area: header;
-    padding: .475rem;
+    padding: .375rem;
     background: #373737;
     text-align: center;
     z-index: 2;

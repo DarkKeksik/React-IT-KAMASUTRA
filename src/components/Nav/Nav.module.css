@@ -5,17 +5,17 @@
     grid-area: nav;
     background: #f7f0ff;
     box-shadow: 0 -5px 5px #ddd;
-    z-index: 1;
 }
 
 .nav__item {
-    background: #4a4a4a;
+    background: #424242;
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
     font-size: 14px;
     letter-spacing: 1px;
-    font-family: 'Roboto';
+    z-index: 2;
     transition-duration: .3s;
+    font-family: 'Roboto';
 }
 
 .nav__item:hover {

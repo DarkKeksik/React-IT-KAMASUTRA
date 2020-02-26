@@ -16,6 +16,6 @@ ul li { list-style-type: none; }
         "nav main main main main main main main main main main main"
         "footer footer footer footer footer footer footer footer footer footer footer footer"
     ;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 100px 1fr;
     min-height: 100vh;
 }

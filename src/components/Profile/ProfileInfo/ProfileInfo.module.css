@@ -1,0 +1,24 @@
+.profile__info {
+    display: flex;
+    gap: 16px;
+    font-family: "Roboto";
+    margin-left: 16px;
+}
+.profile__logo {
+    max-width: 150px;
+    border-radius: 100px;
+}
+.profile__generalInfo {
+
+}
+
+.profile__name {
+    font-size: 25px;
+    color: #333;
+}
+
+.profile__statusText {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #4a4a4a;
+}
