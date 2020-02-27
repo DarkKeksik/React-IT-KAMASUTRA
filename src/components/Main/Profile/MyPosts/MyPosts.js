@@ -10,6 +10,7 @@ function MyPosts() {
             <div className={classes.posts__wrap}>
                 <Post like="10" message="Hi, how are you?" />
                 <Post like="15" message="My first post?" />
+                <Post like="2" message="My first post?" />
             </div>
         </div>
     );
