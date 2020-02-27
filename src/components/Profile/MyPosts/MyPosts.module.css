@@ -1,0 +1,10 @@
+.posts {
+    font-family: "Roboto";
+    margin: 10px 16px 0 16px;
+    color: #424242;
+}
+
+.posts__title {
+    margin-bottom: 10px;
+}
+.posts__wrap {}

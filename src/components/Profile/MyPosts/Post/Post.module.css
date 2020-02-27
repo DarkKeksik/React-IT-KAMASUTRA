@@ -1,0 +1,10 @@
+.posts__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 0 16px;
+    padding: 10px;
+    background: #f7f0ff;
+}
+.posts__likes {
+    font-weight: 700;
+}

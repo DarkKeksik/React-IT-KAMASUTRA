@@ -3,8 +3,8 @@ import classes from "./ProfileStatistics.module.css";
 
 function ProfileStatistics() {
     return (
-        <div class={`${classes.profileBg__statistics}`}>
-            Музыграммов: <span>105</span>
+        <div className={`${classes.profileBg__statistics}`}>
+            Музыграммов: <span>1</span>
         </div>
     )
 }

@@ -3,10 +3,13 @@ import classes from "./ProfileBg.module.css";
 
 import ProfileStatistics from "./ProfileStatistics/ProfileStatistics";
 
-function ProfileBg () {
+function ProfileBg (props) {
     return (
-        <div className={`${classes.profile__bg} ${classes.profile__bg_center}`}>
-            <ProfileStatistics />
+        <div
+            className={`${classes.profile__bg} ${classes.profile__bg_center}`}
+            style={{backgroundImage: `url(${props.src})`}}
+        >
+            <ProfileStatistics  />
         </div>
     )
 }
