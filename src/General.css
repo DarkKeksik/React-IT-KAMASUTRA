@@ -17,5 +17,16 @@ ul li { list-style-type: none; }
         "footer footer footer footer footer footer footer footer footer footer footer footer"
     ;
     grid-template-rows: 100px 1fr;
+    grid-template-columns: 300px 1fr;
     min-height: 100vh;
 }
+
+.box-s {
+    box-sizing: border-box;
+}
+
+.p1 { padding: 10px; }
+.p2 { padding: 15px; }
+.p3 { padding: 20px; }
+.p4 { padding: 25px; }
+.p5 { padding: 30px; }

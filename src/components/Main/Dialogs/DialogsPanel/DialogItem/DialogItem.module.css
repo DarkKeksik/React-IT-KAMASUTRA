@@ -1,0 +1,36 @@
+.dialogPanel__item {
+    display: flex;
+    padding: 5px 10px;
+    background: #f7f0ff;
+    border-bottom: 2px solid #78599b;
+    grid-gap: 10px;
+    font-family: "Roboto";
+}
+
+.dialogPanel__logo {
+    background-color: white;
+    width: 50px;
+    height: 40px;
+    border-radius: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dialogPanel__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #333;
+}
+
+.dialogPanel__count {
+    display: inline-block;
+    padding: 2px 6px;
+    font-weight: 700;
+    background-color: #78599b;
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+}

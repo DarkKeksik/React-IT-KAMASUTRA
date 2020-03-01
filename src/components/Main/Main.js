@@ -7,7 +7,7 @@ import MyMusic from "./MyMusic/MyMusic";
 import Feed from "./Feed/Feed";
 import Settings from "./Settings/Settings";
 
-import {BrowserRouter, Route} from "react-router-dom";
+import {Route} from "react-router-dom";
 
 function Main() {
     return (
@@ -16,7 +16,7 @@ function Main() {
             <Route path="/dialogs" component={Dialogs}/>
             <Route path="/myMusic" component={MyMusic}/>
             <Route path="/feed" component={Feed}/>
-            <Route path="/settings" component={Settings}/>
+            <Route exact path="/settings" component={Settings}/>
         </main>
     );
 };
