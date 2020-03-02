@@ -9,7 +9,7 @@ function ProfileBg (props) {
             className={`${classes.profile__bg} ${classes.profile__bg_center}`}
             style={{backgroundImage: `url(${props.src})`}}
         >
-            <ProfileStatistics  />
+            <ProfileStatistics musicPosts={props.musicPosts}  />
         </div>
     )
 }

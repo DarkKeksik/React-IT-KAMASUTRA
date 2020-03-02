@@ -3,23 +3,10 @@ import classes from "./MyPosts.module.css";
 
 import Post from "./Post/Post";
 
-function MyPosts() {
-    let posts = [
-        {
-            like: "10",
-            message: "Hi, how are you?"
-        },
-        {
-            like: "15",
-            message: "My first post?"
-        },
-        {
-            like: "2",
-            message: "My first post?"
-        }
-    ];
+function MyPosts(props) {
 
-    let PostsJSX = posts
+
+    let PostsJSX = props.posts
         .map((post) => <Post like={post.like} message={post.message} /> );
 
     return (

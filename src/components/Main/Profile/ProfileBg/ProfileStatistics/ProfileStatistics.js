@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./ProfileStatistics.module.css";
 
-function ProfileStatistics() {
+function ProfileStatistics(props) {
     return (
         <div className={`${classes.profileBg__statistics}`}>
-            Музыграммов: <span>1</span>
+            Музыграммов: <span>{props.musicPosts}</span>
         </div>
     )
 }

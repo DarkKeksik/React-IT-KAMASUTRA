@@ -5,14 +5,19 @@ import ProfileBg from "./ProfileBg/ProfileBg";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPosts from "./MyPosts/MyPosts";
 
-function Profile() {
+function Profile(props) {
     return (
         <div className={`${classes.profile}`}>
             <ProfileBg
-                src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8d971472733091.5bf1c9e776516.jpg"
+                src={props.profile.bgSrc}
+                musicPosts={props.profile.musicPosts}
             />
-            <ProfileInfo />
-            <MyPosts />
+            <ProfileInfo
+                avatar={props.profile.avatar}
+                name={props.profile.name}
+                status={props.profile.status}
+            />
+            <MyPosts posts={props.posts} />
         </div>
     );
 }

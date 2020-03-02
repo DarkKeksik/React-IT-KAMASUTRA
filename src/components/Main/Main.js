@@ -9,11 +9,17 @@ import Settings from "./Settings/Settings";
 
 import {Route} from "react-router-dom";
 
-function Main() {
+function Main(props) {
     return (
         <main className={classes.main}>
-            <Route path="/profile" component={Profile}/>
-            <Route path="/dialogs" component={Dialogs}/>
+            <Route path="/profile" render={() =>
+                    <Profile
+                        posts={props.posts}
+                        profile={props.profile}
+                    />
+                }
+            />
+            <Route path="/dialogs" render={ () => <Dialogs /> }/>
             <Route path="/myMusic" component={MyMusic}/>
             <Route path="/feed" component={Feed}/>
             <Route path="/settings" component={Settings} exact />
