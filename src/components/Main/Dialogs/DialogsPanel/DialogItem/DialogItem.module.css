@@ -7,6 +7,12 @@
     font-family: "Roboto";
 }
 
+.dialogPanel__item_active {
+    background: #e4cffb;
+    box-shadow: 0 3px 10px
+    #808080 inset;
+}
+
 .dialogPanel__logo {
     background-color: white;
     width: 50px;

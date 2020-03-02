@@ -16,7 +16,7 @@ function Main() {
             <Route path="/dialogs" component={Dialogs}/>
             <Route path="/myMusic" component={MyMusic}/>
             <Route path="/feed" component={Feed}/>
-            <Route exact path="/settings" component={Settings}/>
+            <Route path="/settings" component={Settings} exact />
         </main>
     );
 };

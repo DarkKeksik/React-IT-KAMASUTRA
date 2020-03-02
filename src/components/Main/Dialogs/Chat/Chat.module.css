@@ -1,0 +1,42 @@
+.messageWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 32px;
+}
+
+.message {
+    padding: 16px 32px;
+    background-color: #f2e6ff;
+    border-radius: 5px;
+    color: #333;
+    font-family: "Roboto";
+}
+.message__my {
+    background-color: inherit;
+}
+.message__panel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.message__avatar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-right: 10px;
+    background: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.message__someone {
+
+}
+
+.logoName {
+    display: flex;
+}
