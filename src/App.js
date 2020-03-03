@@ -13,7 +13,7 @@ function App(props) {
     <BrowserRouter>
         <div className={"appWrapper"}>
             <Header />
-            <Nav />
+            <Nav sidebar={props.sidebar} />
             <Main
                 posts={props.posts}
                 profile={props.profile}

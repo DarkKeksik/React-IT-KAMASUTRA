@@ -2,7 +2,10 @@ import React from "react";
 import classes from "./Nav.module.css";
 import {NavLink} from "react-router-dom";
 
-function Nav() {
+import Friends from "./Friends/Friends";
+
+function Nav(props) {
+
     return (
         <nav className={`${classes.nav}`}>
             <NavLink
@@ -35,6 +38,8 @@ function Nav() {
                 to="/settings"
                 className={`${classes.nav__item}`}
             >Настройка</NavLink>
+
+            <Friends friends={props.sidebar.friends} />
         </nav>
     )
 }

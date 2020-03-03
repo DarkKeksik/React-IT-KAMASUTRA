@@ -1,0 +1,18 @@
+.friends {
+    margin-top: 16px;
+    padding: 20px;
+    color: #333;
+    font-family: "Roboto";
+}
+
+.friends__title {
+    margin-bottom: 20px;
+}
+
+.friends__all {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+    max-height: 130px;
+}
