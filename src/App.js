@@ -8,15 +8,16 @@ import Footer from "./components/Footer/Footer";
 import {BrowserRouter} from "react-router-dom";
 
 function App(props) {
-
   return (
     <BrowserRouter>
         <div className={"appWrapper"}>
             <Header />
-            <Nav sidebar={props.sidebar} />
+            <Nav sidebar={props.state.sidebar} />
             <Main
-                posts={props.posts}
-                profile={props.profile}
+                posts={props.state.profilePage.posts}
+                profile={props.state.profilePage.profile}
+                dialogs={props.state.dialogsPage.dialogs}
+                messages={props.state.dialogsPage.messages}
             />
             <Footer />
         </div>

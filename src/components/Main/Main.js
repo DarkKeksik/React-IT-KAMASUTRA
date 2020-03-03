@@ -19,7 +19,12 @@ function Main(props) {
                     />
                 }
             />
-            <Route path="/dialogs" render={ () => <Dialogs /> }/>
+            <Route path="/dialogs" render={ () =>
+                <Dialogs
+                    messages={props.messages}
+                    dialogs={props.dialogs}
+                />
+            }/>
             <Route path="/myMusic" component={MyMusic}/>
             <Route path="/feed" component={Feed}/>
             <Route path="/settings" component={Settings} exact />

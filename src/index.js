@@ -7,9 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import state from "./redux/state";
 
 ReactDOM.render(<App
-    posts={state.profilePage.posts}
-    profile={state.profilePage.profile}
-    sidebar={state.sidebar}
+    state={state}
 />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

@@ -1,10 +1,24 @@
-.messageWrap {
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.textarea {
+    width: 100%;
+    max-height: 15%;
+    height: 100%;
+    margin: 0 15px 10px 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+.messages {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 16px 32px;
+    width: 100%;
+    padding: 10px 16px;
+    grid-gap: 3px;
 }
-
 .message {
     padding: 16px 32px;
     background-color: #f2e6ff;

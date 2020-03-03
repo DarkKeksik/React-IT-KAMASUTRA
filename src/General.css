@@ -25,6 +25,22 @@ ul li { list-style-type: none; }
     box-sizing: border-box;
 }
 
+.button {
+    padding: 8px 10px;
+    background: #393939;
+    color: white;
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Roboto";
+    transition-duration: .3s;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: #686868;
+}
+
 .p1 { padding: 10px; }
 .p2 { padding: 15px; }
 .p3 { padding: 20px; }

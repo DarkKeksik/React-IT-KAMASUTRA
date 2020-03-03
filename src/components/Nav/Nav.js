@@ -37,7 +37,7 @@ function Nav(props) {
                 activeClassName={classes.nav__item_active}
                 to="/settings"
                 className={`${classes.nav__item}`}
-            >Настройка</NavLink>
+            >Настройки</NavLink>
 
             <Friends friends={props.sidebar.friends} />
         </nav>
