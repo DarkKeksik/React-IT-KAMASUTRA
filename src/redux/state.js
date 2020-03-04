@@ -8,9 +8,9 @@ let state = {
             musicPosts: "3"
         },
         posts: [
-            { like: "10", message: "Hi, how are you?"},
-            { like: "15", message: "My first post?" },
-            { like: "2",  message: "My first post?" }
+            { likes: "10", message: "Hi, how are you?"},
+            { likes: "15", message: "My first post?" },
+            { likes: "2",  message: "My first post?" }
         ]
     },
     dialogsPage: {
@@ -35,6 +35,13 @@ let state = {
             }
         ],
         messages: [
+            {
+                name: "АфродитИТ",
+                avatar: "https://avatars3.githubusercontent.com/u/22128117?s=400&u=f4d686ff3d5743c85456b335d81f9064028fe888&v=4",
+                msg: "Привет, знаю что давно не писал, но ты должен мне сотку",
+                date: "2020-03-02T09:51:00",
+                owner: true
+            },
             {
                 name: "АфродитИТ",
                 avatar: "https://avatars3.githubusercontent.com/u/22128117?s=400&u=f4d686ff3d5743c85456b335d81f9064028fe888&v=4",
@@ -77,6 +84,26 @@ let state = {
             }
         ]
     }
+};
+
+export let addMsgForDialog = (dialogMsg) => {
+    let newMsg = {
+        name: "АфродитИТ",
+        avatar: "https://avatars3.githubusercontent.com/u/22128117?s=400&u=f4d686ff3d5743c85456b335d81f9064028fe888&v=4",
+        msg: dialogMsg,
+        date: "2020-03-04T09:51:00",
+        owner: true
+    };
+
+    state.dialogsPage.messages.push(newMsg);
+};
+
+export let addPost = (postMsg, likes) => {
+    let newPost = {
+        message: postMsg,
+        likes: likes
+    };
+    state.profilePage.posts.push(newPost);
 };
 
 export default state;

@@ -16,6 +16,7 @@
     z-index: 2;
     transition-duration: .3s;
     font-family: 'Roboto';
+    user-select: none;
 }
 
 .nav__item:hover {

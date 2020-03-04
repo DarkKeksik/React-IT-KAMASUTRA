@@ -9,7 +9,7 @@ function Dialogs(props) {
     return (
         <div className={classes.dialogs}>
             <DialogsPanel dialogs={props.dialogs} />
-            <Chat messages={props.messages} />
+            <Chat addMsgForDialog={props.addMsgForDialog} messages={props.messages} />
         </div>
     )
 }

@@ -8,11 +8,11 @@ function MyPosts(props) {
 
     let addPost = () => {
         let text = newPostElement.current.value;
-        alert(text);
+        props.addPost(text, 0);
     };
 
     let PostsJSX = props.posts
-        .map((post) => <Post like={post.like} message={post.message} /> );
+        .map((post) => <Post likes={post.likes} message={post.message} /> );
 
     return (
         <div className={classes.posts}>

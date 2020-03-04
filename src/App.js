@@ -18,6 +18,8 @@ function App(props) {
                 profile={props.state.profilePage.profile}
                 dialogs={props.state.dialogsPage.dialogs}
                 messages={props.state.dialogsPage.messages}
+                addPost={props.addPost}
+                addMsgForDialog={props.addMsgForDialog}
             />
             <Footer />
         </div>

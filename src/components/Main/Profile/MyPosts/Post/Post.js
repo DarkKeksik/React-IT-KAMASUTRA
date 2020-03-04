@@ -7,7 +7,7 @@ function Post(props) {
         <div className={classes.posts__item}>
             <span>{ props.message }</span>
             <span className={classes.posts__likes}>
-                { props.like } лайков
+                {`${props.likes} лайков`}
             </span>
         </div>
     )

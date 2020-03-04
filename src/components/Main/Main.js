@@ -16,6 +16,7 @@ function Main(props) {
                     <Profile
                         posts={props.posts}
                         profile={props.profile}
+                        addPost={props.addPost}
                     />
                 }
             />
@@ -23,6 +24,7 @@ function Main(props) {
                 <Dialogs
                     messages={props.messages}
                     dialogs={props.dialogs}
+                    addMsgForDialog={props.addMsgForDialog}
                 />
             }/>
             <Route path="/myMusic" component={MyMusic}/>

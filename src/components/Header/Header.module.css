@@ -10,4 +10,5 @@
 .header__logo {
     border-radius: 100px;
     height: 100%;
+    user-select: none;
 }
