@@ -23,7 +23,7 @@ function Chat (props) {
                 {messagesJSX}
             </div>
             <div className={classes.textareaWrap}>
-                <textarea ref={linkOnElm} placeholder={"Ваше сообщение..."} className={classes.textarea}></textarea>
+                <textarea ref={linkOnElm} placeholder={"Ваше сообщение..."} value={"То что в стейте"} className={classes.textarea}></textarea>
                 <span onClick={addMsg} className={`button ${classes.sendMsg}`}>Отправить</span>
             </div>
         </div>

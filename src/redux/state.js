@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from "../render";
+
 let state = {
     profilePage: {
         profile: {
@@ -96,6 +98,7 @@ export let addMsgForDialog = (dialogMsg) => {
     };
 
     state.dialogsPage.messages.push(newMsg);
+    rerenderEntireTree(state);
 };
 
 export let addPost = (postMsg, likes) => {
@@ -104,6 +107,7 @@ export let addPost = (postMsg, likes) => {
         likes: likes
     };
     state.profilePage.posts.push(newPost);
+    rerenderEntireTree(state);
 };
 
 export default state;
