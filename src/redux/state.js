@@ -13,7 +13,8 @@ let state = {
             { likes: "10", message: "Hi, how are you?"},
             { likes: "15", message: "My first post?" },
             { likes: "2",  message: "My first post?" }
-        ]
+        ],
+        newPostText: ""
     },
     dialogsPage: {
         dialogs: [
@@ -65,7 +66,8 @@ let state = {
                 date: "2020-03-02T09:51:00",
                 owner: true
             }
-        ]
+        ],
+        newMsgText: ""
     },
     sidebar: {
         pages: [
@@ -109,5 +111,15 @@ export let addPost = (postMsg, likes) => {
     state.profilePage.posts.push(newPost);
     rerenderEntireTree(state);
 };
+
+export let newPostTextChange = (newPostText) => {
+    state.profilePage.newPostText = newPostText;
+    rerenderEntireTree(state);
+}
+
+export let newMsgTextChange = (newMsgText) => {
+    state.dialogsPage.newMsgText = newMsgText;
+    rerenderEntireTree(state);
+}
 
 export default state;

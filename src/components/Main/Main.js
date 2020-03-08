@@ -17,6 +17,8 @@ function Main(props) {
                         posts={props.posts}
                         profile={props.profile}
                         addPost={props.addPost}
+                        newPostText={props.newPostText}
+                        newPostTextChange={props.newPostTextChange}
                     />
                 }
             />
@@ -24,6 +26,8 @@ function Main(props) {
                 <Dialogs
                     messages={props.messages}
                     dialogs={props.dialogs}
+                    newMsgText={props.newMsgText}
+                    newMsgTextChange={props.newMsgTextChange}
                     addMsgForDialog={props.addMsgForDialog}
                 />
             }/>

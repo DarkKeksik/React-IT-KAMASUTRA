@@ -14,12 +14,16 @@ function App(props) {
             <Header />
             <Nav sidebar={props.state.sidebar} />
             <Main
+                newPostText={props.state.profilePage.newPostText}
                 posts={props.state.profilePage.posts}
                 profile={props.state.profilePage.profile}
                 dialogs={props.state.dialogsPage.dialogs}
                 messages={props.state.dialogsPage.messages}
+                newMsgText={props.state.dialogsPage.newMsgText}
                 addPost={props.addPost}
                 addMsgForDialog={props.addMsgForDialog}
+                newPostTextChange={props.newPostTextChange}
+                newMsgTextChange={props.newMsgTextChange}
             />
             <Footer />
         </div>

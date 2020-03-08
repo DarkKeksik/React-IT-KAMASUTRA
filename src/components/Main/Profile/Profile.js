@@ -17,7 +17,12 @@ function Profile(props) {
                 name={props.profile.name}
                 status={props.profile.status}
             />
-            <MyPosts posts={props.posts} addPost={props.addPost} />
+            <MyPosts
+                newPostText={props.newPostText}
+                newPostTextChange={props.newPostTextChange}
+                posts={props.posts}
+                addPost={props.addPost}
+            />
         </div>
     );
 }

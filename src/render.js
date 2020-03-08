@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { addPost, addMsgForDialog } from "./redux/state";
+import { addPost, addMsgForDialog, newPostTextChange, newMsgTextChange } from "./redux/state";
 import {BrowserRouter} from "react-router-dom";
 
 export let rerenderEntireTree = (state) => {
@@ -12,5 +12,7 @@ export let rerenderEntireTree = (state) => {
         state={state}
         addPost={addPost}
         addMsgForDialog={addMsgForDialog}
+        newPostTextChange={newPostTextChange}
+        newMsgTextChange={newMsgTextChange}
     />, document.getElementById('root'));
 };

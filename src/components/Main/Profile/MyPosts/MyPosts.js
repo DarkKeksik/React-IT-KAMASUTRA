@@ -9,11 +9,17 @@ function MyPosts(props) {
     let addPost = () => {
         let text = newPostElement.current.value;
         props.addPost(text, 0);
+        props.newPostTextChange("");
+    };
+    
+    let onPostChange = () => {
+        let text = newPostElement.current.value;
+        props.newPostTextChange(text);
     };
 
     let PostsJSX = props.posts
         .map((post) => <Post likes={post.likes} message={post.message} /> );
-
+             
     return (
         <div className={classes.posts}>
             <div className={classes.posts__panel}>
@@ -21,6 +27,8 @@ function MyPosts(props) {
                 <span onClick={ addPost } className={"button"}>Новый пост</span>
             </div>
             <textarea
+                value={props.newPostText}
+                onChange={onPostChange}
                 className={classes.posts__textarea}
                 placeholder={"Введи сообщение поста"}
                 ref={newPostElement}
