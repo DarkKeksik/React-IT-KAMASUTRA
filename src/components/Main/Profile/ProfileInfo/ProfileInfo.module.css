@@ -6,6 +6,7 @@
 }
 .profile__logo {
     max-width: 150px;
+    max-height: 150px;
     border-radius: 100px;
 }
 .profile__generalInfo {
